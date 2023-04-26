@@ -1,0 +1,34 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.txt-limit {
+  width: 80px;
+}
+
+.stats > .value {
+  font-size: 4rem;
+}
+
+.notification-list {
+  height: 100vh;
+  max-height: 700px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.scrollable-list {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.card.item {
+  margin: 0px 0.5rem;
+  margin-top: 0.5rem;
+}
