@@ -1,5 +1,5 @@
 <?php
-define("BASE_PATH", "/cro-admin");
+include "./config.php";
 define("ASSET_PATH", BASE_PATH . "/assets");
 define("IMAGE_PATH", ASSET_PATH . "/images");
 define("JS_PATH", ASSET_PATH . "/js");
