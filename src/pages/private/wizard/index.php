@@ -11,7 +11,7 @@
     </p>
     <?php include("./src/components/table.php") ?>
   </div>
-  <div class="card p-3 mt-3">
+  <div class="card p-3 my-3">
     <div class="fs-5">
       Step 1. Access client's credit report
     </div>

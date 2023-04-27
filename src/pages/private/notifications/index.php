@@ -16,7 +16,7 @@
         </div>
         <div class="card notification-list scrollable-list mt-4 border-secondary">
           <?php for ($i = 0; $i < 5; $i++) : ?>
-            <div class="card item p-3">
+            <div class="card item p-3 my-1">
               <div class="fs-6">
                 <div><span class="fw-bold">Shelton Strawder</span> sent a message</div>
                 <div class="text-secondary">2023-04-24 23:48:46</div>
@@ -34,7 +34,7 @@
             </div>
           <?php endfor; ?>
           <?php for ($i = 0; $i < 5; $i++) : ?>
-            <div class="card item p-3">
+            <div class="card item p-3 my-1">
               <div class="fs-6">
                 <div><span class="fw-bold">Bajade Elaine</span> updated Anthony Agront business logo for LMTLS Enterprises</div>
                 <div class="text-secondary">2023-04-24 23:48:46</div>
