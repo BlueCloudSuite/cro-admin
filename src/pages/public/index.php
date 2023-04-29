@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <?php include "./src/pages/public/$path/index.php" ?>
   </div>
   <script src="<?php echo JS_PATH ?>/bootstrap.bundle.min.js"></script>
