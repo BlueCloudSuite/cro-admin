@@ -9,7 +9,7 @@
       <br />
       Please keep in mind that updating the client's status will notify the cro and the client.
     </p>
-    <?php include("./src/components/table.php") ?>
+    <?php include("./src/pages/components/table.php") ?>
   </div>
   <div class="card p-3 my-3">
     <div class="fs-5">
@@ -22,4 +22,4 @@
   </div>
 </div>
 
-<?php include "./src/components/widgets/index.php" ?>
+<?php include "./src/pages/components/widgets/index.php" ?>

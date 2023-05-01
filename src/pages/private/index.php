@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <?php include "./src/components/nav.php"; ?>
+  <?php include "./src/pages/components/nav.php"; ?>
   <div class="container">
     <div class="row mt-4">
       <?php include "./src/pages/private/$path/index.php" ?>
