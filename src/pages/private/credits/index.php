@@ -3,8 +3,10 @@
     <div class="fs-5">
       <i class="bi bi-list-stars"></i> <span class="m-1">Credit Information</span>
     </div>
-    <?php include("./src/components/table.php") ?>
+    <div class="mt-5">
+    <?php include("./src/pages/private/credits/credit-table.php") ?>
+    </div>
   </div>
 </div>
 
-<?php include "./src/components/widgets/index.php" ?>
+<?php include "./src/pages/components/widgets/index.php" ?>

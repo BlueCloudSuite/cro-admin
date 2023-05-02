@@ -245,3 +245,7 @@ body {
     transform: rotate(-20deg);
   }
 }
+
+table .actions > button{
+  min-width: 30%;
+}

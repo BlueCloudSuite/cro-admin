@@ -26,6 +26,8 @@ function main($route) {
     header("Location: " . BASE_PATH . "/404?path=$route");
   }
 
+  require_once "./src/lib/core/data/db.php";
+  $db = new DBService();
   include "./src/pages/private/index.php";
 }
 
