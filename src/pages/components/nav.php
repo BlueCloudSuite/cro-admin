@@ -3,7 +3,7 @@
     <a class="navbar-brand" href="#">
       <img src="<?php echo IMAGE_PATH ?>/logo.png" alt="Bootstrap" height="60">
     </a>
-    <button class="navbar-toggler d-xs-block d-md-none mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler d-sm-block d-lg-none mt-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>

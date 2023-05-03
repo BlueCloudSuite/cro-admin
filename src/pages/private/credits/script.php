@@ -1,3 +1,5 @@
+<?php include "./src/pages/components/widgets/script.php" ?>
+
 <script>
   $( document ).ready(function() {
     $("#credit-table").DataTable({
