@@ -139,18 +139,6 @@ body {
   transition: all 0.5s;
 }
 
-.cont_aura_2 {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  bottom: -301px;
-  background-color: #FFCC00;
-  box-shadow: 0px 0px 60px 10px #867f04, 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-  z-index: 5;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-}
-
 .cont_error>.oops {
   left: 0%;
   position: relative;
@@ -173,16 +161,6 @@ body {
   animation-name: count_error_p;
   animation-duration: 1s;
   animation-timing-function: linear;
-}
-
-.cont_aura_2 {
-  animation-name: animation_error_2;
-  animation-duration: 4s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  transform: rotate(-20deg);
-  animation-fill-mode: both;
 }
 
 .cont_aura_1 {

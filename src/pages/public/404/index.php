@@ -18,6 +18,5 @@
       </div>
     </div>
     <div class="cont_aura_1 d-none d-md-block"></div>
-    <div class="cont_aura_2 d-none d-md-block"></div>
   </div>
 </div>
