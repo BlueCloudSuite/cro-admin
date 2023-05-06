@@ -204,4 +204,4 @@
   </div>
 </div>
 
-<?php include "./src/components/widgets/index.php" ?>
+<?php include "./src/pages/components/widgets/index.php" ?>

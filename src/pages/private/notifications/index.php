@@ -1,4 +1,4 @@
-<div class="col-sm-12 col-lg-8 mt-3">
+<div class="col-sm-12 col-lg-8 my-3">
   <div class="card p-3">
     <div class="fs-5">
       <i class="bi bi-bell-fill"></i> <span class="m-1">Notifications</span>
@@ -47,4 +47,4 @@
   </div>
 </div>
 
-<?php include "./src/components/widgets/index.php" ?>
+<?php include "./src/pages/components/widgets/index.php" ?>

@@ -1,8 +1,6 @@
-<?php include "./src/pages/components/widgets/script.php" ?>
-
 <script>
   $(document).ready(function() {
-    $("#wizard-table").DataTable({
+    $("#todo-table").DataTable({
       language: {
         search: "_INPUT_",
         searchPlaceholder: "Search"

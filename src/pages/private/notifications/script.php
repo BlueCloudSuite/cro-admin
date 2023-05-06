@@ -1,0 +1,1 @@
+<?php include "./src/pages/components/widgets/script.php" ?>

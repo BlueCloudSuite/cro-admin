@@ -9,7 +9,9 @@
       <br />
       Please keep in mind that updating the client's status will notify the cro and the client.
     </p>
-    <?php include("./src/pages/components/table.php") ?>
+    <div class="mt-3">
+      <?php include("./src/pages/private/wizard/wizard-table.php") ?>
+    </div>
   </div>
   <div class="card p-3 my-3">
     <div class="fs-5">
