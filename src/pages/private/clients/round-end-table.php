@@ -14,14 +14,42 @@
     <td>0</td>
     <td>1</td>
     <td class="actions">
-      <button type="button" class="btn btn-success" name="message" value="MESSAGE" data-toggle="modal" data-target="#message-0">
-        <i class="bi bi-envelope"></i>
-        <span class="d-none d-lg-inline"> Message</span>
-      </button>
-      <button type="button" class="btn btn-danger" name="preview" data-toggle="modal" data-target="#preview-0">
-        <i class="bi bi-eye"></i>
-        <span class="d-none d-lg-inline"> Preview</span>
-      </button>
+      <div class="message-modal d-inline">
+        <div class="modal fade" id="roundMessageModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ROUND MESSAGE HERE
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#roundMessageModal" class="btn btn-success" name="message" value="MESSAGE">
+          <i class=" bi bi-envelope" aria-hidden="true"></i>
+          <span class="d-none d-lg-inline">Message</span>
+        </button>
+      </div>
+      <div class="preview-modal d-inline">
+        <div class="modal fade" id="roundPreviewModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ROUND PREVIEW HERE
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#roundPreviewModal" class="btn btn-danger" name="message" value="MESSAGE">
+          <i class=" bi bi-eye" aria-hidden="true"></i>
+          <span class="d-none d-lg-inline">Preview</span>
+        </button>
+      </div>
     </td>
   </tbody>
 </table>

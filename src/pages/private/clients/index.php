@@ -17,11 +17,15 @@
     <div class="fs-5">
       <i class="bi bi-list-stars"></i> <span class="m-1">Round Ends</span>
     </div>
-    <?php include("./src/pages/private/clients/round-end-table.php") ?>
+    <div class="mt-3">
+      <?php include("./src/pages/private/clients/round-end-table.php") ?>
+    </div>
   </div>
   <div class="card p-3 my-3">
     <div class="fs-5">
       <i class="bi bi-list-stars"></i> <span class="m-1">CRO Client Portal Link</span>
+    </div>
+    <div class="mt-3">
       <?php include("./src/pages/private/clients/cro-table.php") ?>
     </div>
   </div>

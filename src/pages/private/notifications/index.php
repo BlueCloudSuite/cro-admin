@@ -5,14 +5,15 @@
     </div>
     <div class="row mt-3">
       <div>
-        <div class="btn-group" role="group">
-          <button type="button" class="btn btn-primary">
-            All
-          </button>
-          <button type="button" class="btn btn-primary">
-            Messages
-          </button>
-          <button type="button" class="btn btn-primary">Updates</button>
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">All</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio2">Messages</label>
+
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+          <label class="btn btn-outline-primary" for="btnradio3">Updates</label>
         </div>
         <div class="card notification-list scrollable-list mt-4 border-secondary">
           <?php for ($i = 0; $i < 5; $i++) : ?>

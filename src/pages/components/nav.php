@@ -16,32 +16,32 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link  <?php if ($path == 'wizard') echo "active" ?>" href="<?php echo BASE_PATH . "/wizard" ?>">
+          <a class="nav-link  <?php if ($current_path == 'wizard') echo "active" ?>" href="<?php echo BASE_PATH . "/wizard" ?>">
             <i class="bi bi-magic"></i><span class="m-1">Wizard</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($path == 'clients') echo "active" ?>" href="<?php echo BASE_PATH . "/clients" ?>">
+          <a class="nav-link <?php if ($current_path == 'clients') echo "active" ?>" href="<?php echo BASE_PATH . "/clients" ?>">
             <i class="bi bi-person-fill"></i><span class="m-1">My Client</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($path == 'notifications') echo "active" ?>" href="<?php echo BASE_PATH . "/notifications" ?>">
+          <a class="nav-link <?php if ($current_path == 'notifications') echo "active" ?>" href="<?php echo BASE_PATH . "/notifications" ?>">
             <i class="bi bi-bell-fill"></i><span class="m-1">Notifications</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($path == 'messages') echo "active" ?>" href="<?php echo BASE_PATH . "/messages" ?>">
+          <a class="nav-link <?php if ($current_path == 'messages') echo "active" ?>" href="<?php echo BASE_PATH . "/messages" ?>">
             <i class="bi bi-envelope-fill"></i><span class="m-1">Messages</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($path == 'settings') echo "active" ?>" href="<?php echo BASE_PATH . "/settings" ?>">
+          <a class="nav-link <?php if ($current_path == 'settings') echo "active" ?>" href="<?php echo BASE_PATH . "/settings" ?>">
             <i class="bi bi-gear-fill"></i><span class="m-1">Settings</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link <?php if ($path == 'credits') echo "active" ?>" href="<?php echo BASE_PATH . "/credits" ?>">
+          <a class="nav-link <?php if ($current_path == 'credits') echo "active" ?>" href="<?php echo BASE_PATH . "/credits" ?>">
             <i class="bi bi-star-fill"></i><span class="m-1">Credits</span>
           </a>
         </li>
@@ -51,7 +51,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle fw-bold align-items-end" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Elaine Ganda
+              <?php echo User::currentUser()->getFullName(); ?>
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -59,7 +59,7 @@
               <li>
                 <hr class="dropdown-divider">
               </li>
-              <li><a class="dropdown-item" href="#">Logout</a></li>
+              <li><a class="dropdown-item" href="<?php echo BASE_PATH . "/sign-out" ?>">Logout</a></li>
             </ul>
           </li>
         </ul>

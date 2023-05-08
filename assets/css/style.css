@@ -50,8 +50,7 @@ body {
 }
 
 .container .nav-item .active {
-  background-color: #fff;
-  color: black;
+  background-color: #cfaa37;
   border-radius: 5px;
 }
 
@@ -224,6 +223,40 @@ body {
   }
 }
 
-table .actions > button{
+/* TABLE CSS */
+/* TABLE CSS */
+/* TABLE CSS */
+
+table .actions>button {
   min-width: 30%;
+}
+
+table th {
+  background-color: rgb(33, 37, 41);
+  color: #fff;
+}
+
+table tr:nth-child(even)>td {
+  background-color: #eee;
+}
+
+table.dataTable {
+  padding: 15px 0 15px 0;
+}
+
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after {
+  color: #cfaa37;
+  opacity: 1 !important;
+  margin: 1px 1px;
+}
+
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_desc:before {
+  color: #cfaa37;
+  opacity: 1 !important;
+  margin: 1px 1px;
 }

@@ -6,30 +6,40 @@ define("JS_PATH", ASSET_PATH . "/js");
 define("CSS_PATH", ASSET_PATH . "/css");
 
 
-function main($route) {
+function main($route)
+{
+  define("CURRENT_PATH", $route);
+  session_start();
   $pathParts = explode('/', $route);
-  $path = count($pathParts) > 0 ? $pathParts[0] : "";
+  $current_path = count($pathParts) > 0 ? $pathParts[0] : "";
+  $currentUser = isset($_SESSION['currentUser']) ? $_SESSION['currentUser'] : [];
+  define("CURRENT_USER", $currentUser);
+  $default_route = "/sign-in";
 
-  if ($path == "") {
-    header("Location: " . BASE_PATH . "/wizard"); //set default path
+  $logged_in = isset($currentUser['uuid']) ? $currentUser['uuid'] : null;
+
+  if ($logged_in != null) {
+    $default_route = "/wizard";
   }
 
-  $isPublic = file_exists("./src/pages/public/$path/index.php");
-  
-  if ($isPublic) {
-    include "./src/pages/public/index.php";
-    return;
-  }
+  if (trim($current_path) != "") {
+    $isPublic = file_exists("./src/pages/public/$current_path/index.php");
+    if ($isPublic) {
+      include "./src/pages/public/index.php";
+      return;
+    }
 
-  $isValidPath = file_exists("./src/pages/private/$path/index.php");
-  if (!$isValidPath) {
-    header("Location: " . BASE_PATH . "/404?path=$route");
+    if ($logged_in != null) {
+      $isValidPath = file_exists("./src/pages/private/$current_path/index.php");
+      if (!$isValidPath) {
+        header("Location: " . BASE_PATH . "/404?path=$route");
+        return;
+      }
+      include "./src/pages/private/index.php";
+      return;
+    }
   }
-
-  require_once "./src/lib/core/data/db.php";
-  $db = new DBService();
-  include "./src/pages/private/index.php";
+  header("Location: " . BASE_PATH . $default_route); //set default path
 }
 
 main($_GET['web_route']);
-?>

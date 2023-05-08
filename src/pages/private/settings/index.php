@@ -89,8 +89,8 @@
             <button type="button" class="btn btn-primary m-1">Create Account</button>
             <button type="button" class="btn btn-secondary m-1 mr-0">Cancel</button>
           </div>
-          <div class="fs-6">
-            <?php include("./src/components/table.php") ?>
+          <div class="mt-3 fs-6">
+            <?php include("./src/pages/private/settings/team-member-table.php") ?>
           </div>
         </div>
       </div>

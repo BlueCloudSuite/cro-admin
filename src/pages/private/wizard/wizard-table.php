@@ -18,7 +18,7 @@
     <td>1</td>
     <td>1</td>
     <td class="actions">
-      <button type="button" class="btn btn-info" name="message" value="MESSAGE" data-toggle="modal" data-target="#message-0">
+      <button type="button" class="btn btn-success" name="message" value="MESSAGE" data-toggle="modal" data-target="#message-0">
         <i class="bi bi-arrow-clockwise"></i>
       </button>
     </td>
