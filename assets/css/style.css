@@ -260,3 +260,11 @@ table.dataTable thead .sorting_desc:before {
   opacity: 1 !important;
   margin: 1px 1px;
 }
+
+/* MODAL CSS */
+/* MODAL CSS */
+/* MODAL CSS */
+
+.modal-content {
+  border-bottom: 5px solid rgb(33, 37, 41);
+}

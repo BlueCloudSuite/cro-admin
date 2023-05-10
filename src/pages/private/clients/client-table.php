@@ -28,7 +28,7 @@
               </div>
             </div>
           </div>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#clientMessageModal" class="btn btn-success" name="message" value="MESSAGE">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#clientMessageModal" class="btn btn-primary" name="message" value="MESSAGE">
             <i class=" bi bi-envelope" aria-hidden="true"></i>
             <span class="d-none d-lg-inline">Message</span>
           </button>
@@ -46,7 +46,7 @@
               </div>
             </div>
           </div>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#clientPreviewModal" class="btn btn-danger" name="message" value="MESSAGE">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#clientPreviewModal" class="btn btn-secondary" name="message" value="MESSAGE">
             <i class=" bi bi-eye" aria-hidden="true"></i>
             <span class="d-none d-lg-inline">Preview</span>
           </button>

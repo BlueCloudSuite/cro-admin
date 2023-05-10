@@ -42,12 +42,12 @@
                     <div class="d-flex justify-content-end">
                       <div>
                         <button type="button" class="btn btn-success me-2">
-                          <span>SAVE</span>
+                          <span>Save</span>
                         </button>
                       </div>
                       <div>
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">
-                          CANCEL
+                          Cancel
                         </button>
                       </div>
                     </div>
