@@ -1,25 +1,9 @@
-<form method="POST" action="<?php echo BASE_PATH . "/sign-in" ?>">
-  <input type="hidden" value="admin" name="username" />
-  <input type="hidden" value="sign-in" name="action" />
-  <input type="submit" value="admin" />
-</form>
-<form method="POST" action="<?php echo BASE_PATH . "/sign-in" ?>">
-  <input type="hidden" value="client" name="username" />
-  <input type="hidden" value="sign-in" name="action" />
-  <input type="submit" value="client" />
-</form>
-<?php
-$action = isset($_POST["action"]) ? $_POST["action"] : "";
-$username = isset($_POST["username"]) ? $_POST["username"] : "";
-if ($action == "sign-in") {
-  $_SESSION["currentUser"] = [
-    "uuid" => "some-id-here",
-    "info" => [
-      "firstName" => "Jane",
-      "lastName" => "Doe"
-    ],
-    "role" => $username
-  ];
-  header("Location: " . BASE_PATH . "/"); //set default path
-}
-?>
+<div class="sign-in-page d-flex align-items-center justify-content-center"></div>
+<div class="form-container d-flex align-items-center justify-content-center">
+  <div class="sign-in-image d-none d-lg-block">
+    <span>TEXT HERE</span>
+  </div>
+  <div class="login-container p-0">
+    <?php include "./src/pages/public/sign-in/form.php" ?>
+  </div>
+</div>
