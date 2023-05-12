@@ -1,36 +1,40 @@
-<div class="frm-sign-in p-0 text-center d-flex align-items-center">
+<?php
+$action = isset($_POST["action"]) ? $_POST["action"] : "";
+$username = isset($_POST["username"]) ? $_POST["username"] : "";
+$password = isset($_POST["password"]) ? $_POST["password"] : "";
+if ($action == "sign-in") {
+  if ($username == "admin" && $password == "admin")
+    $_SESSION["currentUser"] = [
+      "uuid" => "some-id-here",
+      "info" => [
+        "firstName" => "Jane",
+        "lastName" => "Doe"
+      ],
+      "role" => $username
+    ];
+  header("Location: " . BASE_PATH . "/"); //set default path
+}
+?>
+
+<div class="frm-sign-in p-0 text-center d-flex align-items-center bg-dark">
   <div class="container">
-    <img src="<?php echo IMAGE_PATH ?>/logo.png" alt="Bootstrap" height="80">
-    <div class="frm-header my-5">
-      <span class="fs-5">LOGIN</span>
+    <img class="mb-5" src="<?php echo IMAGE_PATH ?>/fiaosss.png" alt="Bootstrap" height="80">
+    <div class="frm-header">
+      <span class="fs-4 text-light">ADMIN LOGIN</span>
     </div>
     <div class="frm-txtfield">
       <form method="POST" action="<?php echo BASE_PATH . "/sign-in" ?>">
-        <input type="text" class="form-control my-2" value="admin" name="username" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        <input type="text" class="form-control my-2" value="sign-in" name="action" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        <button type="submit" value="admin" class="btn btn-dark mt-4">ADMIN</button>
-      </form>
-      <form method="POST" action="<?php echo BASE_PATH . "/sign-in" ?>">
-        <input type="text" class="form-control my-2" value="client" name="username" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        <input type="text" class="form-control my-2" value="sign-in" name="action" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-        <button type="submit" value="client" class="btn btn-dark mt-4">CLIENT</button>
+        <div class="input-group flex-nowrap">
+          <span class="input-group-text bg-dark icon-color" id="addon-wrapping"><i class="bi bi-person-circle"></i></i></span>
+          <input type="text" class="form-control" name="username" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <div class="input-group flex-nowrap mt-3 mb-2">
+          <span class="input-group-text bg-dark icon-color" id="addon-wrapping"><i class="bi bi-key-fill"></i></span>
+          <input type="text" class="form-control" name="password" placeholder="Password" aria-label="Password" aria-describedby="addon-wrapping">
+        </div>
+        <input type="hidden" name="action" value="sign-in">
+        <button type="submit" value="admin" class="btn btn-dark mt-5">SIGN IN</button>
       </form>
     </div>
   </div>
 </div>
-
-<?php
-$action = isset($_POST["action"]) ? $_POST["action"] : "";
-$username = isset($_POST["username"]) ? $_POST["username"] : "";
-if ($action == "sign-in") {
-  $_SESSION["currentUser"] = [
-    "uuid" => "some-id-here",
-    "info" => [
-      "firstName" => "Jane",
-      "lastName" => "Doe"
-    ],
-    "role" => $username
-  ];
-  header("Location: " . BASE_PATH . "/"); //set default path
-}
-?>

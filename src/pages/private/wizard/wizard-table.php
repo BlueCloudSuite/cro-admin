@@ -6,7 +6,6 @@
       <th>CRO</th>
       <th>Dispute Ends</th>
       <th>Next Dispute</th>
-      <th>Status</th>
       <th>Process</th>
     </tr>
   </thead>
@@ -15,7 +14,6 @@
     <td>ABCD EFG</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td>1</td>
     <td class="actions">
       <button type="button" class="btn btn-success" name="message" value="MESSAGE" data-toggle="modal" data-target="#message-0">
